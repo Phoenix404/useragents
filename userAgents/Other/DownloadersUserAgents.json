@@ -1,0 +1,58 @@
+[
+    {
+        "description": "Download Demon",
+        "useragent": "Download Demon\/3.5.0.11",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Offline Explorer 2.5",
+        "useragent": "Offline Explorer\/2.5",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "SuperBot 4.4.0 (Win XP)",
+        "useragent": "SuperBot\/4.4.0.60 (Windows XP)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "WebCopier v4.6",
+        "useragent": "WebCopier v4.6",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Web Downloader 6.9",
+        "useragent": "Web Downloader\/6.9",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "WebZIP 3.5",
+        "useragent": "WebZIP\/3.5 (http:\/\/www.spidersoft.com)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Wget 1.9 (Redhat)",
+        "useragent": "Wget\/1.9 cvs-stable (Red Hat modified)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Wget 1.9.1",
+        "useragent": "Wget\/1.9.1",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    }
+]

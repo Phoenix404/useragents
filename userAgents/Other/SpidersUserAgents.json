@@ -1,0 +1,163 @@
+[
+    {
+        "description": "Ask Jeeves\/Teoma",
+        "useragent": "Mozilla\/2.0 (compatible; Ask Jeeves\/Teoma)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Baiduspider ",
+        "useragent": "Baiduspider ( http:\/\/www.baidu.com\/search\/spider.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Bing Bot 2.0 (renamed Msnbot)",
+        "useragent": "Mozilla\/5.0 (compatible; bingbot\/2.0  http:\/\/www.bing.com\/bingbot.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Exabot 3.0",
+        "useragent": "Mozilla\/5.0 (compatible; Exabot\/3.0;  http:\/\/www.exabot.com\/go\/robot) ",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "FAST-WebCrawler 3.8",
+        "useragent": "FAST-WebCrawler\/3.8 (crawler at trd dot overture dot com; http:\/\/www.alltheweb.com\/help\/webmaster\/crawler)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Google AdsBot 1.0",
+        "useragent": "AdsBot-Google ( http:\/\/www.google.com\/adsbot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot 2.1 (New version)",
+        "useragent": "Mozilla\/5.0 (compatible; Googlebot\/2.1;  http:\/\/www.google.com\/bot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot 2.1 (Older Version)",
+        "useragent": "Googlebot\/2.1 ( http:\/\/www.googlebot.com\/bot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-Image 1.0",
+        "useragent": "Googlebot-Image\/1.0",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot MediaPartners",
+        "useragent": "Mediapartners-Google",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-Mobile 2.1 (ID: DoCoMo\/2.0)",
+        "useragent": "DoCoMo\/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile\/2.1;  http:\/\/www.google.com\/bot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-Mobile 2.1 (ID: iPhone)",
+        "useragent": "Mozilla\/5.0 (iPhone; U; CPU iPhone OS) (compatible; Googlebot-Mobile\/2.1;  http:\/\/www.google.com\/bot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-Mobile 2.1 (ID: SAMSUNG-SGH-E250)",
+        "useragent": "SAMSUNG-SGH-E250\/1.0 Profile\/MIDP-2.0 Configuration\/CLDC-1.1 UP.Browser\/6.2.3.3.c.1.101 (GUI) MMP\/2.0 (compatible; Googlebot-Mobile\/2.1;  http:\/\/www.google.com\/bot.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-News",
+        "useragent": "Googlebot-News",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Googlebot-Video",
+        "useragent": "Googlebot-Video\/1.0",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Google Toolbar 4.0 (XP - MSIE 6)",
+        "useragent": "Mozilla\/4.0 (compatible; GoogleToolbar 4.0.1019.5266-big; Windows XP 5.1; MSIE 6.0.2900.2180)",
+        "appcodename": null,
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Google Web Preview",
+        "useragent": "Mozilla\/5.0 (en-us) AppleWebKit\/525.13 (KHTML, like Gecko; Google Web Preview) Version\/3.1 Safari\/525.13",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Msnbot 1.0 (current version)",
+        "useragent": "msnbot\/1.0 ( http:\/\/search.msn.com\/msnbot.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Msnbot 1.1",
+        "useragent": "msnbot\/1.1 ( http:\/\/search.msn.com\/msnbot.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Msnbot 0.11 (beta version)",
+        "useragent": "msnbot\/0.11 ( http:\/\/search.msn.com\/msnbot.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Msnbot-Media 1.1",
+        "useragent": "msnbot-media\/1.1 ( http:\/\/search.msn.com\/msnbot.htm)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Yahoo Slurp",
+        "useragent": "Mozilla\/5.0 (compatible; Yahoo! Slurp; http:\/\/help.yahoo.com\/help\/us\/ysearch\/slurp)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Yahoo Slurp China",
+        "useragent": "Mozilla\/5.0 (compatible; Yahoo! Slurp China; http:\/\/misc.yahoo.com.cn\/help.html)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    }
+]

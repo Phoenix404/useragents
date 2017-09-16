@@ -1,0 +1,37 @@
+[
+    {
+        "description": "Playstation 3 (2.00)",
+        "useragent": "Mozilla\/5.0 (PLAYSTATION 3; 2.00)",
+        "appcodename": "Mozilla",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Playstation 3 (1.10)",
+        "useragent": "Mozilla\/5.0 (PLAYSTATION 3; 1.10)",
+        "appcodename": "Mozilla",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "PSP (2.00)",
+        "useragent": "Mozilla\/4.0 (PSP (PlayStation Portable); 2.00)",
+        "appcodename": "Mozilla",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Wii 2.0.4.7-7",
+        "useragent": "Opera\/9.30 (Nintendo Wii; U; ; 2047-7; en)",
+        "appcodename": "",
+        "appversion": "",
+        "appname": ""
+    },
+    {
+        "description": "Wii libnup (1.00)",
+        "useragent": "wii libnup\/1.0",
+        "appcodename": "wii",
+        "appversion": "",
+        "appname": ""
+    }
+]
