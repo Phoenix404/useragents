@@ -2,7 +2,7 @@
     "name": "phoenix404/useragents",
     "description": "useragents Lib with huge collection of useragents(os, devices, spieders, console browsers..)",
     "type": "library",
-    "license": "MIT",
+    "version":"1.0.0",
     "authors": [
         {
             "name": "phoenix404",
@@ -16,6 +16,6 @@
             "Useragent\\": "Src/"
         }
     },
-    "minimum-stability":"stable",
-    "version":"1.0.0"
+    "minimum-stability": "dev",
+    "license": "MIT"
 }
