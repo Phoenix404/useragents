@@ -1,0 +1,11 @@
+{
+    "name": "phoenix404/useragents",
+    "description": "useragents Lib",
+    "type": "library",
+    "require": {},
+     "autoload": {
+        "psr-4": {
+            "Useragent\\": "Src/"
+        }
+    }
+}

@@ -6,11 +6,10 @@
  * User: Phoenix404
  * Date: 09/09/2017
  * Start time: 17:30
- * End time: 20:00
+ * End time: 22:00
  *
  */
-
-namespace Lib\UserAgents;
+namespace Useragent;
 
 class UserAgent
 {
@@ -106,12 +105,12 @@ class UserAgent
         if(!empty($this->userAgents) && isset($this->userAgents[$specific]))
             return $this->userAgents[$specific];
 
-        if(str_contains($specific, "_"))
+        if($this->str_contains($specific, "_"))
         {
             $folder = explode("_",$specific);
             $folder = ucfirst($folder[0]);
             $file   = ucfirst($folder[1]);
-            $file   = str_contains($file, "UserAgents")?$file:$file."UserAgents.json";
+            $file   = $this->str_contains($file, "UserAgents")?$file:$file."UserAgents.json";
             return $this->getJSONFiles($folder.DIRECTORY_SEPARATOR.$file);
         }else{
             $method = "load".$specific."UserAgents";
@@ -168,7 +167,7 @@ class UserAgent
         $keys = array_keys($this->userAgents);
         foreach ($keys as $key){
             $key_   = $key;
-            if(str_contains($key,$directories))
+            if($this->str_contains($key,$directories))
                  $key_ = str_replace($directories,"",$key);
 
             $userAgents[$key] = str_replace("_","",$key_);
@@ -192,10 +191,16 @@ class UserAgent
                 case(in_array($os, $keys)):
                     return array_search($os, $keys);
                     break;
-                case(str_contains($os, "_")):
+                case($this->str_contains($os, "_")):
                     $os = explode("_", $os);
+                    if($this->str_contains(strtolower($os[0]), "os")) $os[0]  = str_replace(["Os","os"], "OS", $os[0]);
+                    else $os[0]     = ucfirst($os[0]);
 
-                    return ucfirst($os[0])."_".ucfirst($os[1]);
+                    return $os[0]."_".ucfirst($os[1]);
+                    break;
+                case($this->str_contains($os, " ")):
+                    $os     = str_replace(" ", "_", $os);
+                    return $this->getRandomUserAgentKey($os);
                     break;
                 default:
                     return false;
@@ -203,7 +208,7 @@ class UserAgent
             }
 
         }
-        else {
+        else{
 
             if(empty($this->userAgents))
                 $this->loadAllUserAgent();
@@ -245,13 +250,10 @@ class UserAgent
     public function getRandomUserAgent($os="", $expect="", $browser="", $ifNoThenAny=false)
     {
         $os = $this->getRandomUserAgentKey($os);
-        if($os == false)
-            $os = $this->getRandomUserAgentKey();
+        if($os == false) $os = $this->getRandomUserAgentKey();
 
-        while($os === $expect){
-            $os = $this->getRandomUserAgentKey($os);
-        }
-
+        while($os === $expect) $os = $this->getRandomUserAgentKey($os);
+        
         if(strlen($browser)<=0)
             return $this->getRandomUserAgentAttr($this->userAgents[$os]);
 
@@ -289,7 +291,7 @@ class UserAgent
             }
             if(is_object($userAgent)) {
                 $col = $userAgent->$column;
-                if (str_contains(strtolower($col), strtolower($value)))
+                if ($this->str_contains(strtolower($col), strtolower($value)))
                     return ["success" => true, "obj" => $userAgent];
             }
         }
@@ -319,7 +321,7 @@ class UserAgent
             if(is_object($userAgent)) {
                 if(property_exists($userAgent, $column)) {
                     $col = $userAgent->$column;
-                    if (str_contains(strtolower($col), strtolower($value)))
+                    if ($this->str_contains(strtolower($col), strtolower($value)))
                         $returnValue[] = $userAgent;
                 }
             }
@@ -331,11 +333,38 @@ class UserAgent
      * @param $browser
      * @return bool
      */
-    public function getBrowserUserAgent($browser)
+    public function findUserAgents($browser, $field="description")
     {
-        $obj = ($this->searchInFiles("description", $browser));
+        $obj = ($this->searchInFiles($field, $browser));
         if (!empty($obj))
             return $this->getRandomUserAgentObj($obj)["useragent"];
+        return false;
+    }
+
+    /**
+     * @param $browser
+     * @return bool
+     */
+    public function getBrowserUserAgent($browser, $field="description")
+    {
+        return $this->findUserAgents($browser, $field="description");
+    }
+
+    /**
+     * Copy 
+     * Determine if a given string contains a given substring.
+     *
+     * @param  string  $haystack
+     * @param  string|array  $needles
+     * @return bool
+     */
+    public function str_contains($haystack, $needles)
+    {
+        foreach ((array) $needles as $needle){
+            if ($needle !== '' && mb_strpos($haystack, $needle) !== false) {
+                return true;
+            }
+        }
         return false;
     }
 
