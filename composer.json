@@ -2,12 +2,20 @@
     "name": "phoenix404/useragents",
     "description": "useragents Lib with huge collection of useragents(os, devices, spieders, console browsers..)",
     "type": "library",
-    "require": {
-    	"php": "*"
-    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "phoenix404",
+            "email": "manpreet2681995@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
      "autoload": {
         "psr-4": {
             "Useragent\\": "Src/"
         }
-    }
+    },
+    "minimum-stability":"stable",
+    "version":"1.0.0"
 }
