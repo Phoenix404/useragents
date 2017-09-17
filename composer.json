@@ -1,8 +1,10 @@
 {
     "name": "phoenix404/useragents",
-    "description": "useragents Lib",
+    "description": "useragents Lib with huge collection of useragents(os, devices, spieders, console browsers..)",
     "type": "library",
-    "require": {},
+    "require": {
+    	"php": "*"
+    },
      "autoload": {
         "psr-4": {
             "Useragent\\": "Src/"
