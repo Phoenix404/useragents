@@ -78,7 +78,7 @@ class UserAgent
     {
         $filename   = basename($file, ".json");
         $filename   = str_replace(["Browsers", "UserAgents"], "", $filename);
-        $directory  = basename(dirname ($file, 1));
+        $directory  = basename(dirname ($file));
         $this->userAgents[$directory."_".$filename] = json_decode(file_get_contents($file));
     }
 
