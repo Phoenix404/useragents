@@ -10,6 +10,7 @@
             "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
     	"php": ">=5.6.0"
     },
@@ -18,6 +19,5 @@
             "Useragent\\": "Src/"
         }
     },
-    "minimum-stability": "dev",
     "license": "MIT"
 }
