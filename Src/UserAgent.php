@@ -41,7 +41,6 @@ class UserAgent
         return $this->userAgents;
     }
 
-
     /**
      * Read all json file
      * @param string $specialPath
@@ -285,9 +284,9 @@ class UserAgent
         foreach($arr as $key =>$userAgent)
         {
             if(is_array($userAgent)) {
-                $return = $this->searchInFiles($column, $value, $userAgent);
+                $return = $this->findFirstInFiles($column, $value, $userAgent);
                 if($return["success"])
-                    return $return;
+                    return $return["obj"];
             }
             if(is_object($userAgent)) {
                 $col = $userAgent->$column;
@@ -314,10 +313,10 @@ class UserAgent
         }
         foreach($arr as $key =>$userAgent)
         {
-
             if(is_array($userAgent)) {
                 $returnValue = $this->searchInFiles($column, $value, $userAgent, $returnValue);
             }
+
             if(is_object($userAgent)) {
                 if(property_exists($userAgent, $column)) {
                     $col = $userAgent->$column;
